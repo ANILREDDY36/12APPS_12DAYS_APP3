@@ -68,3 +68,4 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem "cocoon"
 gem 'devise'
+gem 'pry', '~> 0.12.2'

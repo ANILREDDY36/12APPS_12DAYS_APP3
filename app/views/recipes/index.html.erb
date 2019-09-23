@@ -6,12 +6,12 @@
         <div class="recipe">
           <div class="image_wrapper">
             <%= link_to recipe do %>
-              <%= image_tag recipe.image.url(:thumb).to_s, class: "recipe_image" %>
+              <%= image_tag(recipe.image_url) if recipe.image? %>
+              <%#= image_tag recipe.image.url(:thumb).to_s, class: "recipe_image" %>
             <% end %>  
           </div>
         </div>
       </div>
     <% end %>
   </div>
-  <h2><%#= link_to recipe.title, recipe %></h2>
 <% end%>
